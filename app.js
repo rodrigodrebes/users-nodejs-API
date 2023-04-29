@@ -7,7 +7,7 @@ const routes = require('./routes');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-app.use('/api', routes);
+app.use(routes);
 
 app.listen(3000, () => {
     console.log('Aplicação está no ar na porta 3000');
